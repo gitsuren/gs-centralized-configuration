@@ -34,21 +34,21 @@ class MessageRestController {
 
 }
 
-@RestController
-class WhatCanIDo {
-
-    @GetMapping("/hmm")
-    String hmm(){
-        RestTemplate restTemplate = new RestTemplate();
-
-        String url = "http://localhost:8082/refresh";
-        String requestJson = "{}";
-        HttpHeaders headers = new HttpHeaders();
-        headers.setContentType(MediaType.APPLICATION_JSON);
-
-        HttpEntity<String> entity = new HttpEntity<String>(requestJson,headers);
-        String answer = restTemplate.postForObject(url, entity, String.class);
-        System.out.println(answer);
-        return answer;
-    }
-}
+//@RestController
+//class WhatCanIDo {
+//
+//    @GetMapping("/hmm")
+//    String hmm(){
+//        RestTemplate restTemplate = new RestTemplate();
+//
+//        String url = "http://localhost:8082/refresh";
+//        String requestJson = "{}";
+//        HttpHeaders headers = new HttpHeaders();
+//        headers.setContentType(MediaType.APPLICATION_JSON);
+//
+//        HttpEntity<String> entity = new HttpEntity<String>(requestJson,headers);
+//        String answer = restTemplate.postForObject(url, entity, String.class);
+//        System.out.println(answer);
+//        return answer;
+//    }
+//}

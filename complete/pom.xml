@@ -12,6 +12,7 @@
         <module>configuration-client</module>
         <module>configuration-service</module>
 		<module>configuration-second-client</module>
+		<module>configuration-fts-client</module>
     </modules>
 
 </project>
